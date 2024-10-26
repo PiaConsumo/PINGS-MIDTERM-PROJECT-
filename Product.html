@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets Shop</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>Gadgets Shop</h1>
+    <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Product.html">Products</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+    
+    <div class="products">
+        <div class="product">
+            <img src="C.jpg" alt="Smartphone">
+            <h2>Smartphone</h2>
+            <p class="price">$9999</p>
+        </div>
+        <div class="product">
+            <img src="A.jpg" alt="Laptop">
+            <h2>Laptop</h2>
+            <p class="price">$32000</p>
+        </div>
+        <div class="product">
+            <img src="T.jpg" alt="Tablet">
+            <h2>Tablet</h2>
+            <p class="price">$8750</p>
+        </div>
+        <div class="product">
+            <img src="S.jpg" alt="Smartwatch">
+            <h2>Smartwatch</h2>
+            <p class="price">$1500</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style >
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.price {
+    font-size: 18px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+.products {
+        flex-direction: column;
+        align-items: center;
+}
+
+    .product {
+        width: 90%;
+        margin: 15px 0;
+}
+</style>
